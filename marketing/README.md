@@ -13,6 +13,7 @@ Start with **[email-strategy.md](email-strategy.md)**: the two-track plan, Namec
 | `emails/assets/owl-video-thumb.gif` | Animated video thumbnail with pulsing play button (600×338) |
 | `emails/assets/owl-flow.gif` | Animated 3-step "how Owl works" (600×300) |
 | `emails/assets/preview-video-email.png` | Screenshot of the HTML email |
+| `video/polish.py` | Polishes the raw demo recording (frame, zooms, click rings, title cards); see `video/README.md` |
 | `emails/assets/make_gifs.py` | Regenerates the GIFs: `python3 make_gifs.py <output-dir>` |
 | `prospects/cabinets-maroc-tous.csv` | 66 accounting firms in Casablanca, Rabat and Marrakech with published emails (see `prospects/README.md`) |
 

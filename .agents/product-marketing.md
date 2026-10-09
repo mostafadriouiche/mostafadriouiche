@@ -28,7 +28,7 @@ Advanced automation for accounting firms (*cabinets comptables / cabinets d'expe
 - **TODO:** demo video URL (2 minutes, one real file)
 - **TODO:** sender email address and phone/WhatsApp for the signature
 
-**Address:** Rue El Arrar, Bd Lalla El Yacout, 3e étage, Casablanca (**TODO:** confirm building number and city)
+**Address:** Rue El Arrar, Bd Lalla El Yacout, 3e étage, Casablanca
 
 ## Ideal customer (ICP)
 - **Who:** independent accounting firms and small/medium *cabinets* (roughly 2–30 staff) with many small-business client files (TPE/PME, commerçants, artisans, professions libérales).
