@@ -12,17 +12,23 @@
 ## Product: Owl
 Advanced automation for accounting firms (*cabinets comptables / cabinets d'expertise comptable*).
 
-**What it does:**
-1. Takes each client file's **business activity** (*activité*) and **VAT regime** (*régime de TVA*) as its starting point.
-2. **Generates the accounting entries** (*écritures comptables*) automatically from that.
-3. **Prepares the VAT return** (*préparation de la déclaration de TVA / préparation fiscale TVA*).
-4. Secure handling of client data (**TODO:** where data is hosted, encryption, access control, backups. Accountants will ask).
+**What it does (confirmed by the founder):**
+1. **Input:** a photo or a file of the documents (invoices etc.). Owl processes **all the journals** (*tous les journaux*).
+2. Uses the **company's own context** (its sector, *secteur*, and its activity, *activité*) to analyse each document and build the accounting entries (*écritures comptables*).
+3. **Prepares the VAT return** (*préparation de la TVA*) so that the file **matches the tax filing** (*concordance avec la déclaration fiscale*).
+4. **Works with every accounting software:** the firm reviews the entries in Owl, then exports them to its own software.
+5. **Time:** processing that used to take hours now takes minutes.
 
-**Why it's different (our angle):** generic tools apply the same logic to every file. Owl starts from the activity and the VAT regime, so the entries and the VAT return come out right for *that* client. The accountant reviews and validates instead of re-keying.
+**Positioning (the founder's chosen focus):** competitors run OCR and extract data; they don't think like an accountant. Owl does: it reasons from the client company's sector, activity and VAT regime. Full analysis: `marketing/competitors-ocr.md`.
 
-- **TODO:** integrations / export formats (which accounting software does Owl export to?)
-- **TODO:** pricing model (per file? per firm? per month?) and whether there is a free trial or pilot
-- **TODO:** demo video URL (even a 2-minute screen recording)
+**Offer:** a trial is possible after signing a contract; if the firm isn't satisfied, it can cancel within one week.
+
+- **TODO:** security facts (where data is hosted, encryption, access control). Accountants will ask
+- **TODO:** price (per month? per file? per firm?)
+- **TODO:** demo video URL (2 minutes, one real file)
+- **TODO:** sender email address and phone/WhatsApp for the signature
+
+**Address:** Rue El Arrar, Bd Lalla El Yacout, 3e étage, Casablanca (**TODO:** confirm building number and city)
 
 ## Ideal customer (ICP)
 - **Who:** independent accounting firms and small/medium *cabinets* (roughly 2–30 staff) with many small-business client files (TPE/PME, commerçants, artisans, professions libérales).
@@ -35,6 +41,7 @@ Advanced automation for accounting firms (*cabinets comptables / cabinets d'expe
 - "Chaque dossier a son régime de TVA, on ne peut pas tout automatiser pareil."
 - "Une erreur de taux ou de régime, et c'est le client qui prend le redressement."
 - "On n'arrive pas à recruter des collaborateurs, donc on refuse des dossiers."
+- "Notre outil de saisie lit les montants, mais on corrige encore les comptes et la TVA à la main." (firms already using an OCR tool)
 
 ## Proof
 - **TODO:** first pilot firm results (number of files, hours saved per VAT deadline, error rate before/after). One real number beats any adjective.

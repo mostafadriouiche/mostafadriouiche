@@ -5,7 +5,9 @@ Start with **[email-strategy.md](email-strategy.md)**: the two-track plan, Namec
 | File | What it is |
 |---|---|
 | `email-strategy.md` | Strategy and sending setup (English) |
-| `emails/cold-sequence-fr.md` | 5 plain-text cold emails in French (Track A) |
+| `competitors-ocr.md` | Owl vs OCR tools: competitors, their weak points, how to position Owl |
+| **`emails/sequence-texte-video-fr.md`** | **Main sequence to send:** 5 plain-text emails + video link + replies to objections (French) |
+| `emails/cold-sequence-fr.md` | Earlier version of the cold emails (replaced by `sequence-texte-video-fr.md`) |
 | `emails/nurture-sequence-fr.md` | 5 HTML nurture emails in French, sent after a positive reply (Track B) |
 | `emails/templates/owl-video-email.html` | Ready-to-send HTML email with animated video thumbnail (paste into Brevo/Mailchimp as "HTML code") |
 | `emails/assets/owl-video-thumb.gif` | Animated video thumbnail with pulsing play button (600×338) |
