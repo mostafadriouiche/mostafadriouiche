@@ -79,11 +79,11 @@ frames[0].save(OUT + "/owl-flow.gif", save_all=True, append_images=frames[1:], d
 
 # ---------- 2. Video thumbnail GIF (600x338) ----------
 ROWS = [
-    ("401000", "Fournisseur Métro", "1 250,00"),
-    ("445660", "TVA déductible 20 %", "250,00"),
-    ("607000", "Achats marchandises", "1 000,00"),
-    ("411000", "Client Dupont SARL", "3 600,00"),
-    ("445710", "TVA collectée 20 %", "600,00"),
+    ("4411", "Fournisseur Marjane", "1 250,00"),
+    ("34552", "TVA récupérable 20 %", "250,00"),
+    ("6111", "Achats de marchandises", "1 000,00"),
+    ("3421", "Client Dupont SARL", "3 600,00"),
+    ("4455", "TVA facturée 20 %", "600,00"),
 ]
 
 
@@ -99,7 +99,7 @@ def thumb_frame(rows_shown, pulse):
     d.text((80 * S, 27 * S), "Dossier : Boulangerie Martin  ·  Activité : commerce  ·  TVA mensuelle", font=font(11 * S), fill=WHITE)
     # table header
     y = 66 * S
-    for x, h in ((40, "Compte"), (130, "Libellé"), (450, "Montant")):
+    for x, h in ((40, "Compte"), (130, "Libellé"), (440, "Montant")):
         d.text((x * S, y), h, font=font(11 * S, True), fill=MUTED)
     d.line([36 * S, y + 20 * S, 564 * S, y + 20 * S], fill=(225, 230, 238), width=S)
     for i in range(rows_shown):
@@ -107,7 +107,7 @@ def thumb_frame(rows_shown, pulse):
         acc, lab, amt = ROWS[i]
         d.text((40 * S, ry), acc, font=font(12 * S, True), fill=NAVY)
         d.text((130 * S, ry), lab, font=font(12 * S), fill=(60, 70, 90))
-        d.text((450 * S, ry), amt + " €", font=font(12 * S), fill=(60, 70, 90))
+        d.text((440 * S, ry), amt + " MAD", font=font(12 * S), fill=(60, 70, 90))
         d.text((540 * S, ry), "✓", font=font(12 * S, True), fill=GREEN)
     # dim overlay + play button
     ov = Image.new("RGBA", (W, H), (15, 31, 61, 95))

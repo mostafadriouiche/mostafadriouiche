@@ -62,16 +62,17 @@ Keep only one SPF record per domain; merge the `include:`s into it.
 **Turn OFF open tracking and click tracking in the cold tool.** Measure replies, not opens.
 
 ## Building the list
-Sources of accounting firms (*cabinets d'expertise comptable*):
-- National professional directory (in France: the Ordre des experts-comptables annuaire; in Morocco: the OEC Maroc; adapt to your country)
-- Google Maps: "expert-comptable [ville]", "cabinet comptable [ville]"
-- LinkedIn Sales Navigator: title *Expert-comptable associé*, company size 2–50
+The first list is ready: `prospects/cabinets-casablanca.csv` (39 Casablanca firms; see `prospects/README.md`).
 
-Start with **200 firms in one city or region**. Write down per firm: partner name, email, city, size, and one personal detail (recent LinkedIn post, a specialty such as *BTP*, *restauration*, *e-commerce*, hiring a collaborator). That detail powers the first line of email 1.
+To grow it, use the same rule: only addresses a firm publishes on **its own website**, with the source URL and date kept for each one. Good sources:
+- **OEC Maroc** (Ordre des Experts-Comptables) for registered *experts-comptables*
+- **OPCA** member firms (*comptables agréés*): the small fiduciaires that do bookkeeping and VAT returns for TPE/PME are Owl's best fit
+- Telecontact.ma and Google Maps, to find firm names, then the firm's own site for the email
+- LinkedIn (manual only, never scraped), to find the partner's first name for `{{prenom}}`
 
-## Legal (check for your country)
-- **France (CNIL):** B2B email prospecting is allowed without prior consent **if the message relates to the recipient's profession** (Owl for an accountant qualifies), the sender is identified, and there's an easy opt-out. Every email in this kit includes an opt-out line and your company identity.
-- **Other countries** (Morocco, Algeria, Tunisia, Belgium…): rules differ. Check your national data-protection authority before sending.
+## Legal (Morocco)
+- Morocco's personal-data law **09-08** (enforced by the **CNDP**) applies to prospect lists, and the consumer-protection law **31-08** regulates electronic prospecting. Check with the CNDP or a lawyer before scaling.
+- Lowest-risk practice: write only to **generic business addresses the firm publishes** (contact@, info@), keep the source URL and date for each one (the CSV does this), identify ThinkAction clearly, and put an easy opt-out in every email. The Gmail addresses in the list are firms' published addresses but are often the owner's personal inbox, so treat them with extra care.
 - Honor every "non" / "stop" immediately and keep a do-not-contact list.
 
 ## Calendar: align with VAT deadlines

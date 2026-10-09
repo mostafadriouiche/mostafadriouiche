@@ -81,7 +81,7 @@ Un calcul rapide pour {{cabinet}} :
 
 [nombre de dossiers TVA] × [heures de saisie par dossier] × [coût horaire d'un collaborateur]
 
-Exemple : 80 dossiers × 1,5 h × 35 € = 4 200 € de saisie par échéance mensuelle.
+Exemple : 80 dossiers × 1,5 h × 150 MAD = 18 000 MAD de saisie par échéance mensuelle.
 
 Owl ne supprime pas le contrôle, mais il retire l'essentiel de la saisie. Sur votre propre chiffre, combien de ces heures pourraient aller au conseil ?
 

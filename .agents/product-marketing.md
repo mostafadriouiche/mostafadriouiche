@@ -6,7 +6,8 @@
 - **Company:** ThinkAction (thinkactionn.com)
 - **Founder / sender:** Mostafa Driouiche
 - **Business email:** hosted on Namecheap Private Email (primary domain)
-- **TODO:** country / countries served (France, Morocco, Algeria, Tunisia, Belgium…). This decides the VAT vocabulary and the email-prospecting law that applies.
+- **Market:** Morocco, starting with Casablanca. Chart of accounts: CGNC. VAT: monthly or quarterly returns (déclarations mensuelles / trimestrielles), régime de l'encaissement or des débits.
+- **First prospect list:** `marketing/prospects/cabinets-casablanca.csv`
 
 ## Product: Owl
 Advanced automation for accounting firms (*cabinets comptables / cabinets d'expertise comptable*).

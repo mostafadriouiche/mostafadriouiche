@@ -77,7 +77,7 @@ Mostafa
 ```
 Bonjour {{prenom}},
 
-[Nom du cabinet pilote ou « Un cabinet de 6 personnes à Lyon »] traitait [X] dossiers TVA par mois, avec [Y] heures de saisie par échéance.
+[Nom du cabinet pilote ou « Un cabinet de 6 personnes à Casablanca »] traitait [X] dossiers TVA par mois, avec [Y] heures de saisie par échéance.
 
 Avec Owl, l'équipe est passée à [Z] heures, et les collaborateurs ont repris du temps pour le conseil client.
 
