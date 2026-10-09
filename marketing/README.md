@@ -12,6 +12,6 @@ Start with **[email-strategy.md](email-strategy.md)**: the two-track plan, Namec
 | `emails/assets/owl-flow.gif` | Animated 3-step "how Owl works" (600×300) |
 | `emails/assets/preview-video-email.png` | Screenshot of the HTML email |
 | `emails/assets/make_gifs.py` | Regenerates the GIFs: `python3 make_gifs.py <output-dir>` |
-| `prospects/cabinets-casablanca.csv` | 39 Casablanca accounting firms with published emails (see `prospects/README.md`) |
+| `prospects/cabinets-maroc-tous.csv` | 66 accounting firms in Casablanca, Rabat and Marrakech with published emails (see `prospects/README.md`) |
 
 Product and audience context for all marketing skills lives in `../.agents/product-marketing.md`; fill in its TODOs first.

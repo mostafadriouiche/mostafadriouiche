@@ -62,7 +62,7 @@ Keep only one SPF record per domain; merge the `include:`s into it.
 **Turn OFF open tracking and click tracking in the cold tool.** Measure replies, not opens.
 
 ## Building the list
-The first list is ready: `prospects/cabinets-casablanca.csv` (39 Casablanca firms; see `prospects/README.md`).
+The first list is ready: `prospects/cabinets-maroc-tous.csv` (66 firms in Casablanca, Rabat and Marrakech; see `prospects/README.md`).
 
 To grow it, use the same rule: only addresses a firm publishes on **its own website**, with the source URL and date kept for each one. Good sources:
 - **OEC Maroc** (Ordre des Experts-Comptables) for registered *experts-comptables*

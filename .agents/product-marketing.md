@@ -7,7 +7,7 @@
 - **Founder / sender:** Mostafa Driouiche
 - **Business email:** hosted on Namecheap Private Email (primary domain)
 - **Market:** Morocco, starting with Casablanca. Chart of accounts: CGNC. VAT: monthly or quarterly returns (déclarations mensuelles / trimestrielles), régime de l'encaissement or des débits.
-- **First prospect list:** `marketing/prospects/cabinets-casablanca.csv`
+- **Prospect list:** `marketing/prospects/cabinets-maroc-tous.csv` (Casablanca, Rabat, Marrakech)
 
 ## Product: Owl
 Advanced automation for accounting firms (*cabinets comptables / cabinets d'expertise comptable*).
