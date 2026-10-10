@@ -1,0 +1,4 @@
+# screenshots and renders contain real invoice data: keep them out of the repository
+*.png
+*.mp4
+*.gif
