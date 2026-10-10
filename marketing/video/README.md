@@ -5,6 +5,8 @@
 - smooth, eased zooms onto the part that matters (the button, the entries, the VAT result)
 - a highlight ring on each click
 - waiting parts sped up, with a visible "×N" badge so nobody is misled about real processing time
+- cuts that remove unimportant parts completely (hesitation, silences, mistakes)
+- French captions at the bottom, for people watching without sound
 - an opening title card and a closing card (thinkactionn.com)
 - the original voice is kept (muted only during sped-up parts)
 

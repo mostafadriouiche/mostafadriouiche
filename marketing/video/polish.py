@@ -13,8 +13,11 @@ edit.json (all times in seconds of the RAW video, x/y as 0–1 of the screen):
   "outro": ["thinkactionn.com", "Réservez une démo de 20 minutes"],
   "zooms":  [{"start": 4, "end": 10, "x": 0.30, "y": 0.40, "scale": 1.8}],
   "clicks": [{"t": 5.2, "x": 0.31, "y": 0.42}],
-  "speed":  [{"start": 20, "end": 50, "factor": 6}]
+  "speed":  [{"start": 20, "end": 50, "factor": 6}],
+  "cuts":   [{"start": 52, "end": 60}],
+  "captions": [{"start": 2, "end": 6, "text": "Owl lit l'activité du client"}]
 }
+"cuts" removes a part completely (hesitation, silence, mistakes).
 """
 import json, math, subprocess, sys
 import numpy as np
@@ -93,12 +96,16 @@ def card(bg, lines):
     return im
 
 
-def build_timeline(dur, fps, speed):
+def build_timeline(dur, fps, speed, cuts=()):
     """List of raw-video times to sample, one per output frame."""
     segs = sorted(speed, key=lambda s: s["start"])
     times, t = [], 0.0
     step = 1.0 / fps
     while t < dur - 1e-6:
+        cut = next((c for c in cuts if c["start"] <= t < c["end"]), None)
+        if cut:
+            t = cut["end"]
+            continue
         f = next((s["factor"] for s in segs if s["start"] <= t < s["end"]), 1)
         times.append((t, f))
         t += step * f
@@ -121,7 +128,8 @@ def main(src, cfg_path, out):
     sw, sh, fps, dur, has_audio = probe(src)
     fps = min(fps, 30)
     zooms, clicks, speed = cfg.get("zooms", []), cfg.get("clicks", []), cfg.get("speed", [])
-    timeline = build_timeline(dur, fps, speed)
+    cuts, captions = cfg.get("cuts", []), cfg.get("captions", [])
+    timeline = build_timeline(dur, fps, speed, cuts)
     bg, mask = background(), frame_mask()
     plain = background(with_shadow=False)
     intro = card(plain, [("Owl", 96, True, AMBER), (cfg.get("subtitle", ""), 44, True, WHITE),
@@ -136,8 +144,12 @@ def main(src, cfg_path, out):
     audio_filter, amap = [], []
     if has_audio:
         parts, t0 = [], 0.0
-        for s in sorted(speed, key=lambda s: s["start"]):
-            parts.append((t0, s["start"], 1)); parts.append((s["start"], s["end"], s["factor"])); t0 = s["end"]
+        events = sorted([(s["start"], s["end"], s["factor"]) for s in speed] + [(c["start"], c["end"], 0) for c in cuts])
+        for a, b, f in events:
+            parts.append((t0, a, 1))
+            if f:
+                parts.append((a, b, f))
+            t0 = b
         parts.append((t0, dur, 1))
         chains = []
         for i, (a, b, f) in enumerate(p for p in parts if p[1] > p[0]):
@@ -174,6 +186,14 @@ def main(src, cfg_path, out):
                 d.ellipse([px - 10, py - 10, px + 10, py + 10], fill=NAVY + (int(a * 0.6),), outline=WHITE + (a,), width=2)
         im = bg.copy()
         im.paste(shot, (FX, FY), mask)
+        cap = next((c["text"] for c in captions if c["start"] <= t < c["end"]), None)
+        if cap:
+            dc = ImageDraw.Draw(im, "RGBA")
+            fnt = font(38, True)
+            tw = dc.textlength(cap, font=fnt)
+            x, y = (W - tw) / 2, FY + FH - 110
+            dc.rounded_rectangle([x - 28, y - 16, x + tw + 28, y + 60], 18, fill=NAVY + (225,))
+            dc.text((x, y), cap, font=fnt, fill=WHITE)
         if f > 1:
             d2 = ImageDraw.Draw(im)
             label = f"×{f}"
