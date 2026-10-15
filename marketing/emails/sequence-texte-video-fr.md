@@ -7,11 +7,11 @@ Format : texte brut, aucune image, aucune animation
 Vidéo : un seul lien, jamais dans l'email 1
 Envoi : lemlist (ou votre boîte Namecheap), 10–15 emails par jour au départ
 Sortie : toute réponse arrête la séquence
-Variables : {{prenom}} {{cabinet}} {{accroche}} {{lien_video}}
+Variables : {{prenom}} {{cabinet}} {{accroche}}
 Règle : ne jamais citer un concurrent par son nom
 ```
 
-`{{lien_video}}` = le lien de votre vidéo (YouTube non répertoriée, Vimeo, ou une page de thinkactionn.com). Jamais en pièce jointe.
+`{{lien_video}}` = **https://thinkactionn.com** (la démo animée en 4 étapes est sur la page d'accueil). Jamais de vidéo en pièce jointe.
 
 **Signature (tous les emails) :**
 ```
@@ -59,7 +59,7 @@ Un outil qui apprend de l'historique n'a rien sur ce fournisseur. Il applique un
 
 Owl raisonne à partir du dossier du client (son secteur, son activité, son régime de TVA). La première facture est donc traitée comme la centième.
 
-J'ai une vidéo de 2 minutes qui le montre sur un vrai dossier. Je vous l'envoie ?
+J'ai une démo de 30 secondes qui le montre sur un vrai dossier. Je vous l'envoie ?
 
 Mostafa
 ```
@@ -73,8 +73,8 @@ Mostafa
 ```
 Bonjour {{prenom}},
 
-Avec plaisir, voici la vidéo (2 minutes) :
-{{lien_video}}
+Avec plaisir, voici la démo (30 secondes) :
+https://thinkactionn.com
 
 On y voit un dossier réel : Owl part de l'activité du client, construit les écritures sur tous les journaux et prépare la TVA. Ce qui prenait des heures prend quelques minutes.
 
@@ -92,9 +92,9 @@ Mostafa
 ```
 Bonjour {{prenom}},
 
-Pour voir la différence entre lire une facture et la comptabiliser, voici 2 minutes sur un vrai dossier, de la photo de la facture jusqu'à la TVA prête à déclarer :
+Pour voir la différence entre lire une facture et la comptabiliser, voici 30 secondes sur un vrai dossier, du document jusqu'au journal comptable :
 
-{{lien_video}}
+https://thinkactionn.com
 
 Une seule question m'intéresse : est-ce que les comptes proposés par Owl correspondent à ce que votre équipe aurait passé ?
 
