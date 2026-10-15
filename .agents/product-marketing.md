@@ -26,7 +26,7 @@ Advanced automation for accounting firms (*cabinets comptables / cabinets d'expe
 - **TODO:** security facts (where data is hosted, encryption, access control). Accountants will ask
 - **TODO:** price (per month? per file? per firm?)
 - **TODO:** demo video URL (2 minutes, one real file)
-- **TODO:** sender email address and phone/WhatsApp for the signature
+- Sender: contact@thinkactionn.com (Namecheap Private Email, sent through Gmail "Send mail as"). Phone: +212 6 44 41 25 24
 
 **Address:** Rue El Arrar, Bd Lalla El Yacout, 3e étage, Casablanca
 
