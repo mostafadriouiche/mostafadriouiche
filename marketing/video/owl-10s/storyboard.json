@@ -1,0 +1,21 @@
+{
+  "title": "Du document à l'écriture comptable",
+  "intro_dur": 1.1,
+  "outro_dur": 1.5,
+  "outro": ["thinkactionn.com", "Owl pense comme un comptable"],
+  "shots": [
+    {"image": "1-vide-clean.png", "dur": 2.6,
+     "caption": "Importez vos factures, PDF ou photo",
+     "camera": [[0, 960, 515, 1.0], [1.3, 1010, 300, 1.75], [2.6, 1050, 250, 1.95]],
+     "cursor": [[0, 1450, 640], [1.4, 1060, 214]],
+     "clicks": [[1.65, 1060, 210]]},
+    {"image": "2-facture-clean.png", "dur": 3.0,
+     "caption": "Owl lit l'activité et le régime de TVA du client",
+     "camera": [[0, 1030, 260, 1.9], [1.2, 900, 225, 2.05], [3.0, 980, 300, 1.75]],
+     "cursor": [[0, 1040, 214], [0.9, 780, 214], [1.9, 1166, 214]],
+     "clicks": [[2.15, 1163, 207]]},
+    {"image": "3-ecritures-clean.png", "dur": 3.3,
+     "caption": "Écritures générées et équilibrées, prêtes à exporter", "caption_pos": "top",
+     "camera": [[0, 1000, 515, 1.0], [1.4, 1200, 560, 1.3], [3.3, 1260, 860, 1.4]]}
+  ]
+}
